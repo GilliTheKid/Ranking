@@ -1,4 +1,9 @@
 Ranking::Application.routes.draw do
+<<<<<<< HEAD
+=======
+
+  
+>>>>>>> 967ac9673df2378309e7eb343cdf0c4e6cfb6833
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -11,7 +16,13 @@ Ranking::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
+<<<<<<< HEAD
   #   resources :products
+=======
+    resources :home
+    resources :player
+    resources :monkey
+>>>>>>> 967ac9673df2378309e7eb343cdf0c4e6cfb6833
 
   # Sample resource route with options:
   #   resources :products do
