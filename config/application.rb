@@ -38,5 +38,12 @@ module Ranking
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    #see listing 3.13 from Michael Hartl : Ruby on Rails 3 Tutorial
+    if Rails.env.test?
+        initializer :after => :initialize_dependancy_mechanism do
+            ActiveSupport::Dependencies.mechanism = :load
+        end
+    end    
   end
 end
