@@ -1,6 +1,13 @@
 <div id="header">
-	<div style="height: 21px; padding: 12px 4px 6px 0">
-		<a>Logout other other1 other2</a>
-	</div>
+	<% if root_path = true %>
+		<div style="height: 21px; padding: 12px 4px 6px 0">
+			<a>sign up</a>
+		</div>
+	<% else %>
+		<div style="height: 21px; padding: 12px 4px 6px 0">
+			<a>Logout other other1 other2</a>
+		</div>
+	<% end %>	
 	<div id="headerline"></div>
 </div>
+
