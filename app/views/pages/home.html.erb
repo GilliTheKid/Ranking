@@ -1,2 +1,24 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div style="padding: 10px 0 10px 0; text-align: right"><%= link_to 'Sign up', signup_path %></div>
+
+<div class="sslogo">
+	<% logo = image_tag("sslogo.jpg") %>
+	<%= link_to logo, root_path %>
+</div>
+<div>
+	<table align="center">
+	<tr>
+		<td>
+			<input type="text" class="textbox"> 
+		</td>
+		<td>	
+			<input type="text" class="textbox">
+		</td>
+		<td>
+			<span class="login_button">login</span>
+		</td>	
+	</tr>
+	</table>
+</div>
+
+	
+

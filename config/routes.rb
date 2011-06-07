@@ -1,7 +1,15 @@
 Ranking::Application.routes.draw do
+  
+  get "users/new"
 
   get "pages/home"
 
+  root :to => "pages#home"
+  
+  match '/signup', :to => "users#new"
+  match '/about', :to => "pages#about"
+  match '/contact', :to => "pages#conract"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -16,12 +24,6 @@ Ranking::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
 
   #   resources :products
-
-    resources :home
-    resources :player
-    resources :monkey
-
-
   # Sample resource route with options:
   #   resources :products do
   #     member do
