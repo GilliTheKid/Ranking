@@ -1,6 +1,6 @@
 <div style="height: 40px"></div>
 <div class="sslogo">
-	<% logo = image_tag("sslogo.jpg") %>
+	<% logo = image_tag("rnkd_logo.png") %> <!--sslogo.jpg-->
 	<%= link_to logo, root_path %>
 </div>
 <div>
@@ -8,15 +8,20 @@
 	<table>
 	<tr>
 		<td>
-			<input type="text" class="textbox" style="margin: 0 -10px 0 160px; width: 150px"> 
+			<input type="text" value="email address" class="textbox" style="margin: 0 -10px 0 160px; width: 150px"> 
 		</td>
 		<td>	
-			<input type="text" class="textbox" style="margin: 0 -10px 0 0; width: 150px">
+			<input type="text" value="password" class="textbox" style="margin: 0 -10px 0 0; width: 150px">
 		</td>
 		<td>
 			<span class="login_button">login</span>
 		</td>	
 	</tr>
+	<tr>
+		<td	 style="text-align: right">
+			<p>forgot your password?</p>
+		</td>
+	</tr>	
 	</table>
 	</div>
 </div>
