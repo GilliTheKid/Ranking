@@ -1,0 +1,13 @@
+<h1>Sign me up!</h1>
+
+<p>Step 1. become a member.   Step 2. validate your email address. Step 3. Join or add groups.</p>
+
+<%= simple_form_for @member do |f| %>
+  <%= f.input :first_name, :label => "first name" %>
+  <%= f.input :last_name, :label => "first last" %>	
+  <%= f.input :email, :label => "email" %>
+  <%= f.input :password, :label => "password" %>
+  <%= f.input :password_confirmation, :label => "confirmation" %>
+  <%= f.button :submit, :value => "Sign up" %>
+<% end %>
+

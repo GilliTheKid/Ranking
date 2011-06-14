@@ -13,7 +13,7 @@ development:
   encoding: unicode
   database: ranking_development
   pool: 5
-  username: ranking
+  username: gtk
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,9 +41,9 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: ranking_development #ADRG 20110602 Should be ranking_test
+  database: ranking_test #ADRG 20110602 Should be ranking_test
   pool: 5
-  username: ranking
+  username: gtk
   password:
 
 production:

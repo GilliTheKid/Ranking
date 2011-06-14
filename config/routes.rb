@@ -1,12 +1,13 @@
 Ranking::Application.routes.draw do
   
-  get "users/new"
+  resources :members
+  get "members/new"
 
   get "pages/home"
 
   root :to => "pages#home"
   
-  match '/signup', :to => "users#new"
+  match '/signup', :to => "members#new"
   match '/about', :to => "pages#about"
   match '/contact', :to => "pages#conract"
   
