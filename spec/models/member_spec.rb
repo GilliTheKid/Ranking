@@ -109,7 +109,7 @@ describe Member do
       @member.should respond_to(:encrypted_password)
     end
     
-    it "should seht the encrypted password" do
+    it "should set the encrypted password" do
       @member.encrypted_password.should_not be_blank
     end
     
