@@ -8,6 +8,7 @@ class MembersController < ApplicationController
     @member = Member.new(params[:member])
     
     if @member.save
+      sign_in @member
       redirect_to @member
     else
       @title = "Sign Up"

@@ -52,6 +52,11 @@ class Member < ActiveRecord::Base
     return member if member.has_password?(submitted_password)
   end
   
+  def self.authenticate_with_salt(id, cookie_salt)
+    member = find_by_id(id)
+    (member && member.salt == cookie_salt) ? member : nil
+  end
+
   private
   
     def encrypt_password
