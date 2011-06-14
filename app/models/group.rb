@@ -13,5 +13,5 @@ class Group < ActiveRecord::Base
   attr_accessible :name
   
   has_many :memberships
-  belongs_to :member, :through => :memberships
+  has_many :member, :through => :memberships
 end
