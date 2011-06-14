@@ -1,16 +1,14 @@
 Ranking::Application.routes.draw do
   
   resources :members
+  resources :sessions, :only => [:new, :create, :destroy]
   
-  get "members/new"
-
-  get "pages/home"
-
   root :to => "pages#home"
   
   match '/signup', :to => "members#new"
   match '/about', :to => "pages#about"
   match '/contact', :to => "pages#conract"
+  match '/signout', :to => "sessions#destroy"
   
   match '/saturdayschool/home', :to => "pages#home"
   

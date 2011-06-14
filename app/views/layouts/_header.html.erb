@@ -1,8 +1,7 @@
 <div id="header">
 	<% if signed_in? %>
 		<div style="height: 21px; padding: 12px 4px 6px 0">
-			<a>Logout other other1 other2</a>
-			
+			<%= link_to "Sign out", signout_path, :method => :delete %>
 		</div>
 	<% else %>
 		<div style="height: 21px; padding: 12px 4px 6px 0">
