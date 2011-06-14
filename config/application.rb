@@ -44,6 +44,6 @@ module Ranking
         initializer :after => :initialize_dependancy_mechanism do
             ActiveSupport::Dependencies.mechanism = :load
         end
-    end    
+    end   
   end
 end

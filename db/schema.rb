@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110614123809) do
+ActiveRecord::Schema.define(:version => 20110614134645) do
 
   create_table "groups", :force => true do |t|
     t.string   "name"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(:version => 20110614123809) do
     t.date     "date_of_birth"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "encrypted_password"
+    t.string   "salt"
   end
 
   add_index "members", ["email"], :name => "index_members_on_email", :unique => true

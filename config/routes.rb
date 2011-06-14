@@ -1,6 +1,7 @@
 Ranking::Application.routes.draw do
   
   resources :members
+  
   get "members/new"
 
   get "pages/home"
