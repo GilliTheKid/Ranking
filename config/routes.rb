@@ -3,7 +3,7 @@ Ranking::Application.routes.draw do
   resources :members
   resources :sessions, :only => [:new, :create, :destroy]
   
-  root :to => "pages#home"
+  root :to => "sessions#new"
   
   match '/signup', :to => "members#new"
   match '/about', :to => "pages#about"

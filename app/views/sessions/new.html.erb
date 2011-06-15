@@ -1,0 +1,11 @@
+<div class="sslogo" style="padding: 50px 0 0 0">
+	<% logo = image_tag("rnkd_logo.png") %> <!--sslogo.jpg-->
+	<%= link_to logo, root_path %>
+</div>
+
+<%= simple_form_for(:session, :url => sessions_path) do |f| %>
+	<%= f.input :email, :label => false, :input_html => { :class => "textbox", :style => "margin: 0 -10px 0 160px; width: 150px" } %>
+ 	<%= f.input :password, :label => false, :input_html => { :class => "textbox", :style => "margin: 0 -10px 0 0; width: 150px" } %>
+	<%= f.button :submit, :value => "Sign in" %>
+<% end %>
+
